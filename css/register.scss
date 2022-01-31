@@ -11,7 +11,11 @@
     flex: 2;
 }
 
-input {
+textarea {
+    height: 10rem;
+}
+
+input, textarea {
     width: 400px;
 }
 
@@ -28,7 +32,7 @@ button[type="submit"] {
 
 @media (max-width: 1250px) {
 
-    input {
+    input, textarea {
         box-sizing: border-box;
         width: 100%;
     }

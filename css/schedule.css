@@ -2,6 +2,23 @@
   max-width: 900px;
 }
 
+#calendar-section {
+  -webkit-box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+          box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  background-color: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+
+#calendar-section .scheduler-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d629a;
+  text-transform: uppercase;
+}
+
 #calendar-section #calendar {
   font-family: Lato;
   font-weight: 300;
@@ -19,8 +36,9 @@
 }
 
 #calendar-section .fc-toolbar-title {
-  font-size: 1rem;
-  font-weight: 300;
+  color: #2c6097;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 #calendar-section .fc-today-button {
@@ -40,13 +58,15 @@
 }
 
 #calendar-section .fc-col-header-cell {
+  color: #2c6097;
   font-weight: 300;
-  font-size: .8rem;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 #calendar-section .fc-daygrid-day {
   font-weight: 400;
-  color: lightgray;
+  color: #909090;
 }
 
 #calendar-section .fc-daygrid-day-events {
@@ -58,11 +78,20 @@
 }
 
 #calendar-section .fc-day-today {
-  background-color: ghostwhite;
+  background-color: #d4f9ff;
+  border: 1px solid #d9d9d9;
+  border-radius: 100px;
 }
 
 #calendar-section .fc-day-disabled {
   background-color: white;
+}
+
+.fc .fc-highlight {
+  background: #b7e8ff;
+  background: var(--fc-highlight-color, rgba(149, 149, 149, 0.3));
+  border: 1px solid #d9d9d9;
+  border-radius: 100px;
 }
 
 #schedule-div {
@@ -93,8 +122,8 @@
       -ms-flex: 1;
           flex: 1;
   border: 1px solid lightblue;
-  color: dodgerblue;
-  background-color: white;
+  color: white;
+  background-color: #2d629a;
   width: 100%;
   font-weight: 600;
   margin-bottom: 10px;

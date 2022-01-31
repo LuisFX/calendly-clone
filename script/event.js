@@ -1,8 +1,8 @@
 var event = {
-    name: "Pricing Review",
-    organizer: "ACME Sales",
+    name: "Patient Appointment",
+    organizer: "Dr. Smith Wesson",
     duration: 15,
-    description: "Our team will meet with you to review pricing options.",
+    description: "Your appointment will be confirmed via email upon review.",
     date: new Date(),
     time: "9:00",
     attendees: []

@@ -1,15 +1,17 @@
 body {
-    background-color: ghostwhite;
+    color: #2d629a;
+    margin: 0px;
+    background-color: #f5f5f5;
     font-family: Lato;
 }
 
 h3 {
-    color: darkslategray;
+    // color: #2c6097;
     margin-top: 0;
 }
 
 h4 {
-    color: darkslategray;
+    // color: #2c6097;
     font-weight: 300;
     margin-top: 0;
 }
@@ -20,7 +22,7 @@ p {
 
 button {
     height: 50px;
-    background-color: dodgerblue;
+    background-color: #2d629a;
     color: white;
     font-size: 1rem;
     font-weight: 500;
@@ -57,7 +59,7 @@ label {
     color: darkslategray;
 }
 
-input {
+input, textarea {
     display: block;
     height: 40px;
     border: 1px solid lightgray;
@@ -81,23 +83,36 @@ input {
 }
 
 .container {
-    background-color: white;
+    background-color: #f5f5f5;
     display: flex;
-    margin: 100px auto; //300px
+    // margin: 20px auto; //300px
     justify-content: center;
-    border-radius: 10px;
+    // border-radius: 10px;
     height: 525px;
     max-width: 800px;
 }
 
+.brand{
+    padding: 20px;
+    max-width: 300px;
+}
+
 .description-section {
+    color: white;
     flex: 1;
-    margin: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right, #2d629a , #0ba7c5);
+}
+
+.confirm-section {
+    flex: 1;
+    padding: 20px;
 }
 
 .body-section {
     flex: 1;
-    margin: 30px; 
+    margin: 0px; 
 }
 
 hgroup {
@@ -107,23 +122,24 @@ hgroup {
 
 #event {
     font-weight: 700;
-    color: darkslategray;
+    // color: darkslategray;
 }
 
 #scheduler, #duration {
     font-weight: 400;
-    color: darkgray;
+    // color: darkgray;
 }
 
 #event-time-stamp {
     margin: 0;
     margin-left: 5px;
     font-weight: 400;
-    color:mediumseagreen;
+    // color:#00ff72;
     line-height: 1.3;
 }
 
 .icon-text-div {
+    color:#00ff72;
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
@@ -142,16 +158,17 @@ hgroup {
 @media (max-width: 1250px) {
     .container {
         display: block;
-        height: 85vh;
+        height: 100vh;
         text-align: center;
         width: 645px;
-        margin: 50px auto;
+        // margin: 0px auto;
         overflow-y: scroll;
     }
 
     .description-section {
-        padding-top: 30px;
-        margin: 30px 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        // margin: 30px 100px;
     }
 
     .body-section {
@@ -177,17 +194,18 @@ hgroup {
     .container {
         background-color: none;
         width: auto;
-        margin: 50px 0;
+        // margin: 50px 0;
         overflow: auto;
     }
 
     .description-section {
-        padding: 0;
-        margin: 30px 5%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        // margin: 30px 5%;
     }
 
     .body-section {
         padding: 0;
-        margin: 30px 2%;
+        // margin: 30px 2%;
     }
 }

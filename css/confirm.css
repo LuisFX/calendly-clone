@@ -1,14 +1,16 @@
 .container {
   display: block;
-  height: 85vh;
   text-align: center;
   width: 645px;
-  margin: 50px auto;
   overflow: auto;
 }
 
 .body-section, .description-section {
   margin: 50px 100px;
+}
+
+#event-time-stamp {
+  color: #2b7c4f;
 }
 
 .description-section {

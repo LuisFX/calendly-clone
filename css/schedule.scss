@@ -3,8 +3,20 @@
 }
 
 #calendar-section {
-
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
     // Override FullCalendar CSS Styles
+
+    .scheduler-label {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2d629a;
+        text-transform: uppercase;
+    }
     #calendar {
         font-family: Lato;
         font-weight: 300;
@@ -19,8 +31,9 @@
 
     // Header
     .fc-toolbar-title {
-        font-size: 1rem;
-        font-weight: 300;
+        color: #2c6097;
+        font-size: 1.5rem;
+        font-weight: 400;
     }
     .fc-today-button {
         display:none;
@@ -37,12 +50,14 @@
 
     // Days
     .fc-col-header-cell {
+        color: #2c6097;
         font-weight: 300;
-        font-size: .8rem;;
+        font-size: 1rem;
+        text-transform: uppercase;
     }
     .fc-daygrid-day {
         font-weight: 400;
-        color:lightgray;
+        color:#909090;
     }
     .fc-daygrid-day-events {
         margin: 0;
@@ -51,12 +66,21 @@
         margin: auto;
     }
     .fc-day-today {
-        background-color: ghostwhite;
+        background-color:  #d4f9ff;
+        border: 1px solid #d9d9d9;
+        border-radius: 100px;
     }
     .fc-day-disabled {
         background-color: white;
     }
 }
+
+.fc .fc-highlight {
+    background:rgb(183, 232, 255);
+    background: var(--fc-highlight-color, rgba(149, 149, 149, 0.3));
+    border: 1px solid #d9d9d9;
+    border-radius: 100px;
+  }
 
 #schedule-div {
     display: flex;
@@ -76,8 +100,8 @@
 .time-btn {
     flex: 1;
     border: 1px solid lightblue;
-    color: dodgerblue;
-    background-color: white;
+    color: white;
+    background-color: #2d629a;
     width: 100%;
     font-weight: 600;
     margin-bottom: 10px;
