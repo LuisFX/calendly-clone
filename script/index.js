@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {alert("Sorry that date has already past. Please select another date.");}
         },
     });
+    console.log(calendar)
     calendar.render();
 });
 
